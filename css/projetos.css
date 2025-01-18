@@ -1,0 +1,64 @@
+.projetos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  height: 685px;
+}
+
+.projetos h3 {
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
+  color: #bebebe;
+  padding: 60px;
+  padding-left: 90px;
+}
+
+.projetos img {
+  width: 200px;
+}
+
+.projetos a {
+  text-decoration: none;
+}
+
+.projetos-div {
+  display: flex; /* Alterado para flexbox */
+  flex-direction: column; /* Empilha img e span */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  gap: 20px;
+}
+
+.projetos span {
+  text-align: center;
+  background-color: #093278;
+  font-size: 1rem;
+  color: #d8e4f8;
+  text-decoration: none;
+  padding: 6px 6px;
+  border-radius: 3px;
+}
+
+@media (max-width: 1070px) {
+  .projetos h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #bebebe;
+    word-break: normal;
+    text-align: center; /* Centraliza o texto no eixo horizontal */
+    padding: 0;
+    margin: 0 auto; /* Adiciona margem automática para centralizar */
+    max-width: 100%; /* Remove restrição de largura */
+  }
+  .projetos {
+    padding-top: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+  }
+}

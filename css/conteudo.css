@@ -1,0 +1,140 @@
+.sobremim {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #99bcf5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 170px;
+  height: 780px;
+}
+
+.sobremim-div {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.sobremim ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.habilidades-buttons {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: space-evenly;
+}
+.habilidades-div li {
+  background-color: #093278;
+  font-size: 1.2rem;
+  color: #d8e4f8;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.sobremim-texto {
+  max-width: 44ch;
+  line-height: 30px;
+  font-size: 1.25rem;
+  padding-top: 20px;
+}
+.subtitulo {
+  font-size: 4.5rem;
+}
+
+.sobremim-div h2::before {
+  content: "";
+  display: block;
+  width: 40.77px;
+  height: 55.39px;
+  background: url("../img/detalhe2.svg") no-repeat center;
+  position: absolute;
+  z-index: 2;
+  left: 80px;
+  bottom: -217px;
+}
+
+.habilidades-div h2::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 605.23px;
+  background: url("../img/detalhe3.svg") no-repeat center;
+  position: absolute;
+  z-index: 5;
+  left: -40px;
+  bottom: -55.54px;
+}
+
+.habilidades-div {
+  margin: 0 auto;
+  max-width: 480px;
+  max-height: 220px;
+  position: relative;
+  top: 386px;
+  right: 60px;
+}
+
+@media (max-width: 1390px) {
+  .habilidades-div h2::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sobremim-div h2::before {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .sobremim {
+    grid-template-columns: 2fr;
+    padding-left: 30px;
+  }
+  .habilidades-div {
+    position: static;
+    margin: 0 auto;
+    max-width: 480px;
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sobremim {
+    display: grid;
+    grid-template-columns: 2fr;
+    height: 700px;
+    gap: 20px;
+    background-color: #99bcf5;
+    padding: 0px 30px 0px 30px;
+  }
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+  .sobremim-texto {
+    max-width: 44ch;
+    line-height: 25px;
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  .habilidades-div {
+    position: static;
+    margin: 0 auto;
+    max-width: 480px;
+    max-height: 220px;
+  }
+  .sobremim-div {
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 145px;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .habilidades-div li {
+    font-size: 1rem;
+    padding: 4px 10px;
+  }
+}

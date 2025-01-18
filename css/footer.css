@@ -1,0 +1,87 @@
+.footer {
+  background-color: #093278;
+}
+
+.footer-container {
+  max-width: 1200px;
+  display: grid;
+  padding: 120px 20px 60px 20px;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  gap: 180px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.33;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+}
+
+.footer-contato li:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("/img/email.svg") no-repeat center;
+  position: absolute;
+  color: #ffffff;
+  right: 450px;
+  top: 2300px;
+}
+
+.footer-contato li:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("/img/telefone.svg") no-repeat center;
+  position: absolute;
+  color: #ffffff;
+  right: 450px;
+  top: 2350px;
+}
+.footer-contato li:nth-child(3)::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("/img/localização.svg") no-repeat center;
+  position: absolute;
+  color: #ffffff;
+  right: 450px;
+  top: 2395px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li:nth-child(1)::before {
+    display: none;
+  }
+  .footer-contato li:nth-child(2)::before {
+    display: none;
+  }
+  .footer-contato li:nth-child(3)::before {
+    display: none;
+  }
+  .footer-contato li {
+    font-size: 1rem;
+  }
+}
